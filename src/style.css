@@ -39,6 +39,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  box-shadow: 2px 2px 2px;
 }
 
 .both-columns {
