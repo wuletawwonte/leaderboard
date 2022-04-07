@@ -1,13 +1,16 @@
 import './style.css';
-import {scores, getAll} from './modules/scores.js';
+import { scoreFromUser, loadScores } from './modules/uichange.js';
+import { addScore } from './modules/scores.js';
 
-const dashboard = document.getElementById('scores-table');
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ibRiySckROHsfVJb6fa8/scores';
+const refreshBtn = document.querySelector('.refresh-btn');
+const addScoreForm = document.getElementById('add-score-form');
 
-const loadScores = async () => {
-  const { result } = await getAll();
-  dashboard.innerHTML = result.map((score) => `<tr><td>${score.user}: ${score.score}</td></tr>`).join('');
-};
-
-window.onload = () => {
-  loadScores();
-};
+window.addEventListener('load', () => loadScores(url));
+refreshBtn.addEventListener('click', () => loadScores(url));
+addScoreForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  await addScore(url, scoreFromUser());
+  loadScores(url);
+  addScoreForm.reset();
+});

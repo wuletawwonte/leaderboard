@@ -1,8 +1,5 @@
+const getAll = async (url) => (await fetch(url)).json();
 
-const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ibRiySckROHsfVJb6fa8/scores';
+const addScore = async (url, score) => (await fetch(url, score)).json();
 
-const scores = [{name: "Wuletaw", score: 42}]
-
-const getAll = async() => (await fetch(url)).json();
-
-export {getAll, scores};
+export { getAll, addScore };
