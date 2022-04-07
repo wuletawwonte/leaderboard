@@ -2,7 +2,7 @@
   --primary: #62bfe0;
   --secondary: #e74d80;
   --white: #fff;
-  --black: #525252;  
+  --black: #525252;
   --black-2: #ddd;
   --gray: #eee;
 }
@@ -88,11 +88,11 @@ main {
   border-collapse: collapse;
 }
 
-tr, td {
+tr,
+td {
   padding: 3px;
 }
 
 tr:nth-child(even) {
   background-color: var(--black-2);
 }
-
