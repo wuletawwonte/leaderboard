@@ -1,0 +1,18 @@
+:root {
+  --primary: #62bfe0;
+  --secondary: #e74d80;
+  --white: #fff;
+  --black: #525252;  
+  --gray: #eee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: var(--gray);
+}
