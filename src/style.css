@@ -48,6 +48,7 @@ main {
 
 .left-side {
   flex-basis: 45%;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -56,6 +57,11 @@ main {
 .left-side-header {
   display: flex;
   justify-content: space-between;
+}
+
+.refresh-btn {
+  align-self: center;
+  height: 25px;
 }
 
 .right-side {
