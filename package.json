@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/wuletawwonte/leaderboard/issues"
   },
-  "homepage": "https://github.com/wuletawwonte/leaderboard#readme"
+  "homepage": "https://github.com/wuletawwonte/leaderboard#readme",
+  "devDependencies": {
+    "webpack": "^5.71.0",
+    "webpack-cli": "^4.9.2"
+  }
 }
