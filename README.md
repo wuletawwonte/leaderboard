@@ -10,7 +10,9 @@
 - Frameworks: none
 - Technologies used: Webpack, Leaderboard API service
 
-## Features implemented so far are:
+## Live Demo
+
+![homepage-snapshot](https://user-images.githubusercontent.com/12524453/162288741-1277486d-fd01-424e-9545-04afdbe4bda1.png)
 
 - Responsive HTML page
 - Proper ES6 Syntax
