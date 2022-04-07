@@ -8,7 +8,10 @@
 - Frameworks: none
 - Technologies used: Webpack, Leaderboard API service
 
-## Live Demo (if available)
+## Live Demo
+
+![homepage-snapshot](https://user-images.githubusercontent.com/12524453/162288741-1277486d-fd01-424e-9545-04afdbe4bda1.png)
+
 
 ## Authors
 
