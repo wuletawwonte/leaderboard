@@ -2,7 +2,7 @@ import './style.css';
 import { scoreFromUser, loadScores } from './modules/uichange.js';
 import { addScore } from './modules/scores.js';
 
-const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ibRiySckROHsfVJb6fa8/scores';
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/RuqoTXEIzrmdy63cia1D/scores';
 const refreshBtn = document.querySelector('.refresh-btn');
 const addScoreForm = document.getElementById('add-score-form');
 
