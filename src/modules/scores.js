@@ -1,24 +1,8 @@
-const scores = [
-  {
-    name: 'Wuletaw',
-    score: 200,
-  },
-  {
-    name: 'Safar',
-    score: 50,
-  },
-  {
-    name: 'Abebe',
-    score: 100,
-  },
-  {
-    name: 'Sentayehu',
-    score: 250,
-  },
-  {
-    name: 'Rio',
-    score: 100,
-  },
-];
 
-export default scores;
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ibRiySckROHsfVJb6fa8/scores';
+
+const scores = [{name: "Wuletaw", score: 42}]
+
+const getAll = async() => (await fetch(url)).json();
+
+export {getAll, scores};
