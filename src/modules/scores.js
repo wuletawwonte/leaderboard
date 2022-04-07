@@ -1,24 +1,5 @@
-const scores = [
-  {
-    name: 'Wuletaw',
-    score: 200,
-  },
-  {
-    name: 'Safar',
-    score: 50,
-  },
-  {
-    name: 'Abebe',
-    score: 100,
-  },
-  {
-    name: 'Sentayehu',
-    score: 250,
-  },
-  {
-    name: 'Rio',
-    score: 100,
-  },
-];
+const getAll = async (url) => (await fetch(url)).json();
 
-export default scores;
+const addScore = async (url, score) => (await fetch(url, score)).json();
+
+export { getAll, addScore };
